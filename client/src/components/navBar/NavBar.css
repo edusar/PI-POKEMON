@@ -1,0 +1,47 @@
+.nav-container{
+    display:flex;
+    background-color:#0a0a37;
+    height:65px;
+    border:3px solid rgb(255, 0, 0);
+    border-radius:10px;
+    align-items: center;
+
+}
+
+
+
+.btn-style{
+    border-radius: 10px;
+    height: 50px;
+    background-color:rgb(12, 12, 203);
+    color:white
+}
+
+.btn-style:hover{
+    border-radius: 10px;
+    height: 50px;
+    background-color:rgb(116, 41, 167);
+    color:rgb(193, 103, 103)
+}
+
+.div-search{
+    text-align: left;
+    margin-right: 50px;
+}
+
+.search{
+    height:25px;
+    
+ 
+}
+
+.div-create{
+    text-align: center;
+    color:white;
+    margin-right: 25px;
+    background-color: rgba(0, 255, 255, 0.246);
+}
+
+.poke-create{
+    margin-left:330px ;
+}

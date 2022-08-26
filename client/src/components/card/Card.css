@@ -1,0 +1,28 @@
+.card-btn{
+    height: 200px;
+    width: 95%;
+    margin: 10px auto;
+    background-color: rgba(3, 8, 44, 0.7);
+    border: 1px solid red;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    
+}
+
+.card-btn:hover{
+    height: 200px;
+    width: 95%;
+    margin: 10px auto;
+    background-color: rgba(34, 58, 245, 0.7);
+    border: 1px solid rgb(119, 8, 8);
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+
+.image-btn{
+    height: 55px;
+    width: 25%;
+}

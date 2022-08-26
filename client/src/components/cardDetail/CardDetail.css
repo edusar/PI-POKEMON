@@ -1,0 +1,40 @@
+.detail-container{
+    background-image:url("../imagenes/Carddetalle.gif");
+    background-size: contain ;
+    height: 1000px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.CardDetail{
+    margin-top:65px;
+    background-color: rgba(11, 179, 179, 0.705);
+    height: 700px;
+    width: 30%;
+    border: 1px solid white;
+    border-radius:25px
+}
+
+.card-item{
+    border-radius:25px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.393);
+    height:40px;
+    color:white;
+    font-size:30px;
+    border: 1px solid white;
+}
+
+.image-carddetail{
+   align-self: center;
+   width: 30%;
+    height: 100px;
+    
+}
+
+.only-img{
+    text-align: center;
+}

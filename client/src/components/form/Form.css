@@ -1,0 +1,72 @@
+.danger{
+ 
+    border:1px solid red
+}
+.danger:focus{outline: none;}
+
+.red-input:focus {
+    background: yellow;
+    color: rgb(255, 0, 0);
+  }
+  
+  .blue-input:focus {
+    background: rgb(17, 255, 0);
+    color: rgb(36, 36, 101);
+  }
+
+  .titleCr{
+    
+    color:rgba(28, 66, 179, 0.771);
+    text-align:center;
+    background: rgba(69, 208, 166, 0.676);
+    border: 1px solid
+  }
+
+  .form-bkg{
+    
+    background-image: url("../imagenes/gifForm.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: -25px;
+    height: 1400px;
+    align-items: center;
+    
+  }
+
+
+  .singleInpt{
+
+    width: 100%;
+    height:90px;
+    background-color: rgba(1, 5, 129, 0.691);
+    color: rgb(255, 255, 255);   
+    border: 1px solid;
+    border-radius:10px
+
+    
+}
+
+.Form-Cnt{
+  padding: 20px;
+  border: solid 1px rgb(221, 255, 0);
+  margin-top: 50px;
+  background-color: rgba(110, 63, 63, 0.478);
+  display:grid;
+  justify-content:space-around;
+  grid-template-columns: 350px 355px;
+  grid-template-rows: 150px 150px;
+  width:80%;
+  align-items: center;
+  margin-left: 10%;
+  height: 800px;
+  
+}
+
+.sel-Count{
+
+  color:blue
+}
+
+.types{
+  color:blue
+}
