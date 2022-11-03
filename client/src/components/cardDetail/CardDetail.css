@@ -38,3 +38,14 @@
 .only-img{
     text-align: center;
 }
+
+.back-home{
+   
+    background-color:rgba(0, 0, 255, 0.596);
+    border-radius:10px;
+    border:2px solid black;
+    height:40px;
+    color:white;
+    align-self: center;
+    
+}

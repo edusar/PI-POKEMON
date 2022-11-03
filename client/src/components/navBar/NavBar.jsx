@@ -3,6 +3,7 @@ import { getAllPokemons,cleanState, getPokemonTypeSelected, orderPokemonByAttack
 import { useState, useEffect } from "react"
 import { useDispatch,useSelector } from "react-redux"
 import { useHistory } from "react-router-dom"
+import pokebola from "../imagenes/pokebola.webp"
 
 
 
@@ -105,21 +106,29 @@ const goToForm = ()=>{
 
 
     return(
+        <div >
         <div className="nav-container">
             
             <div className="div-search">
                 <input className="search" value={search} type="text" placeholder="Busca un pokemon" onChange={(e)=>{pokeName(e)}} />
-                <button type="button" onClick={() => pokeSearch()}>Buscar</button>
+                <button className="search" type="button" onClick={() => pokeSearch()}>Buscar</button>
                 <br/>
                 <button className="search" value="Limpiar busqueda" onClick={(e)=>{resetState(e)}}>Limpiar busqueda</button>
             </div>
          
           
 
-            <div className="div-create">
+            <div className="create-cnt">
+            <img className="image-create" src={pokebola}/>
+            <button className="btn-style" onClick={()=>{goToForm()}}>Crear tu pokemon → </button>
+            </div>
+        </div>
+        <div className="filters-cnt">
+            
+        <div className="div-create">
             <label>Filtra por creacion</label>
-                <select onChange={(e)=>{filteredByCreated(e)}} multiple={false}>
-                <optgroup   label="-Selecciona por creacion-"/>
+                <select className="search" onChange={(e)=>{filteredByCreated(e)}} multiple={false}>
+                <optgroup className="search"  label="-Selecciona por creacion-"/>
                 <option key="1212"name="todos">Todos</option>
                 <option key="13" name="createdAt">Creados</option>
                 <option key="14" name="nonCreated">Originales</option>
@@ -128,8 +137,8 @@ const goToForm = ()=>{
             </div>
             <div className="div-create">
             <label>Filtar por tipo</label>
-                <select value={selectedType} onChange={(e)=>{typeSelected(e)}}>
-                <optgroup label="-Filtar por tipo-"/>
+                <select className="search" value={selectedType} onChange={(e)=>{typeSelected(e)}}>
+                <optgroup className="search" label="-Filtar por tipo-"/>
              
                   {pokeTypes?.map((n)=>{
                       console.log(n.name)
@@ -141,13 +150,11 @@ const goToForm = ()=>{
             
             
             <div className="div-create">
-                <label>Ordenar por:</label><button onClick={()=>{sendOrder("Alphabet")}}>Orden Alfabetico  {names}</button>
+                <label>Ordenar por:</label><button className="search" onClick={()=>{sendOrder("Alphabet")}}>Orden Alfabetico  {names}</button>
                 
-                        <button onClick={()=>{sendOrder("Attack")}}>Ataque{atakks}</button>
+                        <button className="search" onClick={()=>{sendOrder("Attack")}}>Ataque{atakks}</button>
             </div>
-            <div className="poke-create">
-            <button className="btn-style" onClick={()=>{goToForm()}}>Crear tu pokemon → </button>
-            </div>
+        </div>
         </div>
 
     )

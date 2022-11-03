@@ -1,3 +1,4 @@
+import swal from "sweetalert2"
 import { GET_ALL_POKEMONS, CLEAN_DETAIL, GET_BY_ID, GET_BY_NAME, GET_TYPES, FILTER_BY_TYPES,ORDER_BY_ATTACK,ORDER_BY_ALPHABET,FILTER_CREATED,CLEAN_STATE} from "../../actions/actionCreator"
 const initialState ={
     allPokemons: [],
@@ -112,7 +113,12 @@ export default function rootReducer (state = initialState, action){
 
                 else{
                     if(action.payload === "Creados" && preData.length === 0){
-                    alert("no hay pokemones creados")
+                        swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'No hay pokemons creados todavia...Intenta con otro filtro',
+                
+                          })
                     data4.push(preFilter)
                     }
                 }

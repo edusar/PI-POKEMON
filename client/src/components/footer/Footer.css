@@ -1,0 +1,11 @@
+.foot-cont{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(222, 103, 103);
+    color: white ;
+    justify-content: space-around;
+    flex-direction:center; 
+    font-size:15px;
+
+    
+}

@@ -2,6 +2,7 @@ import "./Home.css"
 import NavBar from "../navBar/NavBar"
 import Cards from "../cards/Cards"
 import titulo from "../imagenes/pokemonstorage.png"
+import Footer from "../footer/Footer"
 
 export default function Home () {
     
@@ -11,6 +12,7 @@ export default function Home () {
             <div className="titulo-home"><img src={titulo}/></div>
             
             <Cards className="cardsinhome"/>
+            <Footer className="footer"/>
         </div>
     )
 

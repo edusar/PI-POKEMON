@@ -1,11 +1,21 @@
 .nav-container{
+    margin-top: 5px;
     display:flex;
+    justify-content: space-between;
+    
+  
     background-color:#0a0a37;
-    height:65px;
+    height: 100px;
     border:3px solid rgb(255, 0, 0);
     border-radius:10px;
     align-items: center;
 
+}
+
+.image-create{
+    height: 65px;
+    width:85px;
+    
 }
 
 
@@ -13,8 +23,10 @@
 .btn-style{
     border-radius: 10px;
     height: 50px;
-    background-color:rgb(12, 12, 203);
+    margin:5px;
+    background-color:rgba(248, 73, 9, 0.623);
     color:white
+
 }
 
 .btn-style:hover{
@@ -27,21 +39,44 @@
 .div-search{
     text-align: left;
     margin-right: 50px;
+    margin:10px
 }
 
 .search{
-    height:25px;
+   
+    background-color:rgba(0, 0, 255, 0.596);
+    border-radius:10px;
+    border:2px solid black;
+    height:40px;
+    color:white;
+    align-self: center;
     
- 
+}
+
+.create-cnt{
+    display: flex;
+    
 }
 
 .div-create{
-    text-align: center;
+    background-color:rgba(0, 0, 255, 0.596);
+    border-radius:10px;
+    border:2px solid black;
+    height:40px;
     color:white;
-    margin-right: 25px;
-    background-color: rgba(0, 255, 255, 0.246);
+    align-self: center;
 }
 
 .poke-create{
+    align-items:right;
     margin-left:330px ;
+    display: flex;
+    flex-direction:column;
 }
+
+.filters-cnt{
+    display: flex; 
+    margin: 10px 10px;
+    justify-content:space-around
+}
+

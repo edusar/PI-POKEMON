@@ -7,7 +7,7 @@ import LandingPage from "./components/landingPage copy/LandingPage"
 
 function App() {
   return (
-    <Routes>
+    <Routes >
       <Route exact path="/" component={LandingPage}/>
       <Route exact path="/home" component={Home}/>
       <Route exact path="/home/cardDetail/:id" component={CardDetail}/>

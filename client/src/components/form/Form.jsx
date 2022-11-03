@@ -207,7 +207,7 @@ export default function Form (){
     return (<div className="form form-bkg" >
 
         <h1 className="titleCr">Aqui puedes crear tu pokemon llenando los campos requeridos:</h1>
-        <button onClick={()=>backHome()}>Volver a Home</button>
+        <button className="back-home"onClick={()=>backHome()}> ← Volver a Home</button>
         <form  className="Form-Cnt" onSubmit={(e) => { handleSubmit(e) }}>
 
 

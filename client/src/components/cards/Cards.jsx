@@ -26,7 +26,7 @@ export default function Cards (){
             dispatch(getTypes())
         }
       
-    },[])
+    },[filtered])
 
 
     
@@ -67,7 +67,7 @@ export default function Cards (){
                
                 <div className="nextprevious">
                 <button className="btn-style" onClick={()=>{anteriorPag()}}>Pagina Anterior</button>
-                <div className="btn-style">Pagina {(pagina / 12)+1 } de {Math.ceil(data.length /12)}</div>
+                <div className="infoPage">Pagina {(pagina / 12)+1 } de {Math.ceil(data.length /12)}</div>
                 <button className="btn-style" onClick={()=>{siguientePag()}}>Pagina Siguiente</button>
                 </div>
                 <div className="cards" >  

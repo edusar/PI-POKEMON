@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import swal from "sweetalert2"
 export const GET_ALL_POKEMONS ="GET_ALL_POKEMONS"
 export const GET_BY_NAME = "GET_BY_NAME"
 export const GET_BY_ID = "GET_BY_ID"
@@ -25,7 +25,12 @@ export function getAllPokemons(name){
         })
     })
         .catch(err=>{
-            alert("Por favor verifique el nombre")
+            swal.fire({
+                icon: 'error',
+                title: 'Oops...ese nombre no coincide',
+                text: 'Por favor verifica el nombre y vuelve a intentar',
+    
+              })
             // window.location.assign("./home")
             return err
         })
